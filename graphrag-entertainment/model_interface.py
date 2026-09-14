@@ -1,0 +1,23 @@
+import dotenv
+import os
+
+from langchain.agents import create_agent
+from langchain_google_genai import ChatGoogleGenerativeAI
+
+dotenv.load_dotenv()
+
+model = os.getenv("LLM_MODEL")
+api_key = os.getenv("LLM_API_KEY")
+
+
+llm = ChatGoogleGenerativeAI(
+    model=model,
+    google_api_key=api_key
+)
+
+agent = create_agent(
+    model=llm
+
+)
+
+

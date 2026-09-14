@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ac50e3fd-4cae-4ef9-8e7f-a01a3bce28ed" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/fastapiproject.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphrag-entertainment/ingestion/chunking_documents.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphrag-entertainment/ingestion/db_conn.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphrag-entertainment/ingestion/db_conn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphrag-entertainment/ingestion/document_conversion.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/graphrag-entertainment/ingestion/document_conversion.ipynb" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseLocalColorSettings">
+    <colors>
+      <entry key="a88bfa10-5eb6-454f-a5a7-b74da6b07389" value="" />
+    </colors>
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="51" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="Jupyter Notebook" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/graphrag-entertainment" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="7.206411070879646E-10" />
+      <entry key="MS500" value="0.014924820937231664" />
+      <entry key="S2" value="0.48877273475762156" />
+      <entry key="S5" value="1.3362867436109878" />
+      <entry key="S10" value="1.975192434929766" />
+      <entry key="S30" value="2.7223282193374354" />
+      <entry key="S60" value="3.1555852608340955" />
+      <entry key="M2" value="3.797342685993522" />
+      <entry key="M5" value="10.810161417237387" />
+      <entry key="M10" value="36.985517159863704" />
+      <entry key="M15" value="71.05876681620842" />
+      <entry key="M30" value="162.95408022388554" />
+      <entry key="H1" value="263.94921889615193" />
+      <entry key="H2" value="341.1272053800467" />
+      <entry key="H4" value="389.1820900083155" />
+      <entry key="D1" value="435.1041422097112" />
+      <entry key="W1" value="443.57102787558483" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0000000000000089" />
+      <entry key="S5" value="1.0000033756693538" />
+      <entry key="S10" value="1.0025635704522387" />
+      <entry key="S30" value="1.216588423198001" />
+      <entry key="S60" value="1.6580073992417008" />
+      <entry key="M2" value="2.1772012228920032" />
+      <entry key="M5" value="3.7226982792312366" />
+      <entry key="M10" value="6.856075686624274" />
+      <entry key="M15" value="9.206018112777471" />
+      <entry key="M30" value="12.943713015323024" />
+      <entry key="H1" value="15.601449846911088" />
+      <entry key="H2" value="17.195369471057205" />
+      <entry key="H4" value="18.0695428731905" />
+      <entry key="D1" value="18.840851251222904" />
+      <entry key="W1" value="18.977162511902353" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="7.194593642970197E-8" />
+      <entry key="MS500" value="0.04672411428128779" />
+      <entry key="S2" value="0.8658743711360948" />
+      <entry key="S5" value="1.975329909062307" />
+      <entry key="S10" value="2.7625687078029864" />
+      <entry key="S30" value="3.848731659535889" />
+      <entry key="S60" value="4.758914763091649" />
+      <entry key="M2" value="5.941515947725416" />
+      <entry key="M5" value="14.508438074392185" />
+      <entry key="M10" value="43.814924530705774" />
+      <entry key="M15" value="80.23867966517211" />
+      <entry key="M30" value="175.87701032297116" />
+      <entry key="H1" value="279.53703656864775" />
+      <entry key="H2" value="358.31467449093964" />
+      <entry key="H4" value="407.2473660569171" />
+      <entry key="D1" value="453.94423378196933" />
+      <entry key="W1" value="462.54808060823893" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="3JEORYlLYOu9ZsQPM5hsXZwLSVT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/rewansh57/Programming/GraphRagForMovies&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/graphrag-entertainment/extraction-service/src/models" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/graphrag-entertainment" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-821f704e66d9-5bd6d13a2a75-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-262.9437.214" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ac50e3fd-4cae-4ef9-8e7f-a01a3bce28ed" name="Changes" comment="" />
+      <created>1789222755187</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1789222755187</updated>
+      <workItem from="1789222758882" duration="377000" />
+      <workItem from="1789223155698" duration="7906000" />
+      <workItem from="1789234949266" duration="1504000" />
+      <workItem from="1789314056522" duration="3787000" />
+      <workItem from="1789340413180" duration="3515000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
