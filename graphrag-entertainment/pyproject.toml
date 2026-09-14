@@ -1,16 +1,27 @@
 [project]
-name = "fastapiproject"
+name = "graphrag-entertainment"
 version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "RewanshChoudhary", email = "rewanshchoudhary57@gmail.com" }
+]
 requires-python = ">=3.14"
 dependencies = [
     "dotenv>=0.9.9",
     "fastapi>=0.141.1",
-    "ipykernel>=7.3.0",
     "langchain>=1.4.0",
     "langchain-google-genai>=4.4.0",
+    "langgraph>=1.2.11",
+    "numpy>=2.5.3",
     "pandas>=3.0.5",
-    "pandas-stubs~=3.0.5",
     "psycopg>=3.3.5",
-    "pydantic>=2.13.5",
     "uvicorn>=0.52.4",
 ]
+
+[project.scripts]
+graphrag-entertainment = "graphrag_entertainment:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"

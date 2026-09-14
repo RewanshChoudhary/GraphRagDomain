@@ -2,9 +2,10 @@
 <module external.system.id="pyproject.toml" type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$/graphrag-entertainment">
+      <sourceFolder url="file://$MODULE_DIR$/graphrag-entertainment/src" />
       <excludeFolder url="file://$MODULE_DIR$/graphrag-entertainment/.venv" />
     </content>
-    <orderEntry type="jdk" jdkName="~/Programming/GraphRagForMovies/graphrag-entertainment/.venv" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="~/Programming/GraphRagForMovies/graphrag-entertainment/.venv (2)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

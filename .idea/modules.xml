@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/GraphRagForMovies.iml" filepath="$PROJECT_DIR$/.idea/GraphRagForMovies.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/fastapiproject.iml" filepath="$PROJECT_DIR$/.idea/fastapiproject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/graphrag-entertainment.iml" filepath="$PROJECT_DIR$/.idea/graphrag-entertainment.iml" />
     </modules>
   </component>
 </project>

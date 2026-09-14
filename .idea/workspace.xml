@@ -5,13 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac50e3fd-4cae-4ef9-8e7f-a01a3bce28ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/fastapiproject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphrag-entertainment/ingestion/chunking_documents.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphrag-entertainment/ingestion/db_conn.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphrag-entertainment/ingestion/db_conn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphrag-entertainment/ingestion/document_conversion.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/graphrag-entertainment/ingestion/document_conversion.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/fastapiproject.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphrag-entertainment/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/graphrag-entertainment/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphrag-entertainment/ingestion/convert_reviews_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphrag-entertainment/ingestion/convert_reviews_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphrag-entertainment/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/graphrag-entertainment/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphrag-entertainment/uv.lock" beforeDir="false" afterPath="$PROJECT_DIR$/graphrag-entertainment/uv.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +25,7 @@
     </colors>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="51" />
+    <option name="cachedIndexableFilesCount" value="45" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -36,7 +37,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/graphrag-entertainment" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="McpProjectServerCommands">
     <commands />
@@ -44,61 +45,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="7.206411070879646E-10" />
-      <entry key="MS500" value="0.014924820937231664" />
-      <entry key="S2" value="0.48877273475762156" />
-      <entry key="S5" value="1.3362867436109878" />
-      <entry key="S10" value="1.975192434929766" />
-      <entry key="S30" value="2.7223282193374354" />
-      <entry key="S60" value="3.1555852608340955" />
-      <entry key="M2" value="3.797342685993522" />
-      <entry key="M5" value="10.810161417237387" />
-      <entry key="M10" value="36.985517159863704" />
-      <entry key="M15" value="71.05876681620842" />
-      <entry key="M30" value="162.95408022388554" />
-      <entry key="H1" value="263.94921889615193" />
-      <entry key="H2" value="341.1272053800467" />
-      <entry key="H4" value="389.1820900083155" />
-      <entry key="D1" value="435.1041422097112" />
-      <entry key="W1" value="443.57102787558483" />
+      <entry key="MS100" value="1.6471766907287924" />
+      <entry key="MS500" value="3.261918742740656" />
+      <entry key="S2" value="4.96683597199291" />
+      <entry key="S5" value="7.278940679799495" />
+      <entry key="S10" value="10.251507898793408" />
+      <entry key="S30" value="20.842885765344707" />
+      <entry key="S60" value="37.21137560649484" />
+      <entry key="M2" value="60.13847414614697" />
+      <entry key="M5" value="91.06849438844607" />
+      <entry key="M10" value="125.0154621788934" />
+      <entry key="M15" value="160.5956671257133" />
+      <entry key="M30" value="254.95626659371325" />
+      <entry key="H1" value="361.05793671128606" />
+      <entry key="H2" value="443.79086044990964" />
+      <entry key="H4" value="495.9214729136031" />
+      <entry key="D1" value="546.1326146046011" />
+      <entry key="W1" value="555.4297366886658" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0000000000000089" />
-      <entry key="S5" value="1.0000033756693538" />
-      <entry key="S10" value="1.0025635704522387" />
-      <entry key="S30" value="1.216588423198001" />
-      <entry key="S60" value="1.6580073992417008" />
-      <entry key="M2" value="2.1772012228920032" />
-      <entry key="M5" value="3.7226982792312366" />
-      <entry key="M10" value="6.856075686624274" />
-      <entry key="M15" value="9.206018112777471" />
-      <entry key="M30" value="12.943713015323024" />
-      <entry key="H1" value="15.601449846911088" />
-      <entry key="H2" value="17.195369471057205" />
-      <entry key="H4" value="18.0695428731905" />
-      <entry key="D1" value="18.840851251222904" />
-      <entry key="W1" value="18.977162511902353" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="6.867990603118856E-85" />
+      <entry key="S2" value="9.103479594498203E-22" />
+      <entry key="S5" value="3.834414025245673E-9" />
+      <entry key="S10" value="6.23884426009764E-5" />
+      <entry key="S30" value="0.05473793793860827" />
+      <entry key="S60" value="0.44239273356203956" />
+      <entry key="M2" value="1.511853966430981" />
+      <entry key="M5" value="4.016193264438558" />
+      <entry key="M10" value="7.548810909757705" />
+      <entry key="M15" value="10.193412092243175" />
+      <entry key="M30" value="14.553339128488725" />
+      <entry key="H1" value="17.767182403678788" />
+      <entry key="H2" value="19.736071167311742" />
+      <entry key="H4" value="20.828263072155117" />
+      <entry key="D1" value="21.79892120482594" />
+      <entry key="W1" value="21.971129075909086" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="7.194593642970197E-8" />
-      <entry key="MS500" value="0.04672411428128779" />
-      <entry key="S2" value="0.8658743711360948" />
-      <entry key="S5" value="1.975329909062307" />
-      <entry key="S10" value="2.7625687078029864" />
-      <entry key="S30" value="3.848731659535889" />
-      <entry key="S60" value="4.758914763091649" />
-      <entry key="M2" value="5.941515947725416" />
-      <entry key="M5" value="14.508438074392185" />
-      <entry key="M10" value="43.814924530705774" />
-      <entry key="M15" value="80.23867966517211" />
-      <entry key="M30" value="175.87701032297116" />
-      <entry key="H1" value="279.53703656864775" />
-      <entry key="H2" value="358.31467449093964" />
-      <entry key="H4" value="407.2473660569171" />
-      <entry key="D1" value="453.94423378196933" />
-      <entry key="W1" value="462.54808060823893" />
+      <entry key="MS100" value="1.583136056918452" />
+      <entry key="MS500" value="3.2022759940547427" />
+      <entry key="S2" value="4.927098939856537" />
+      <entry key="S5" value="7.257902631158589" />
+      <entry key="S10" value="10.239262017158243" />
+      <entry key="S30" value="20.88996611643766" />
+      <entry key="S60" value="37.64027683590145" />
+      <entry key="M2" value="61.62997760025281" />
+      <entry key="M5" value="95.06168122574495" />
+      <entry key="M10" value="132.53850373631354" />
+      <entry key="M15" value="170.7633912098725" />
+      <entry key="M30" value="269.48849978151475" />
+      <entry key="H1" value="378.81097497320536" />
+      <entry key="H2" value="463.51863402786796" />
+      <entry key="H4" value="516.7452255669124" />
+      <entry key="D1" value="567.9307282712194" />
+      <entry key="W1" value="577.4007489557379" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -110,33 +111,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/rewansh57/Programming/GraphRagForMovies&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.document_store.executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/home/rewansh57/Programming/GraphRagForMovies",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "to.speed.mode.migration.done": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/graphrag-entertainment/extraction-service/src/models" />
@@ -163,10 +166,16 @@
       <workItem from="1789234949266" duration="1504000" />
       <workItem from="1789314056522" duration="3787000" />
       <workItem from="1789340413180" duration="3515000" />
+      <workItem from="1789346425128" duration="20000" />
+      <workItem from="1789347035944" duration="3000" />
+      <workItem from="1789348199007" duration="662000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/GraphRagForMovies$document_store.coverage" NAME="document_store Coverage Results" MODIFIED="1789348553219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graphrag-entertainment/ingestion" />
   </component>
 </project>
