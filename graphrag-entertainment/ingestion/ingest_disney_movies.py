@@ -2,7 +2,7 @@ import math
 
 import pandas as pd
 
-from ingestion.chunking_documents import chunk_document, insert_chunk
+from ingestion.review_chunking import chunk_document, insert_chunk
 from ingestion.db_conn import get_postgres_connection
 from ingestion.document_store import insert_documents
 from ingestion.models import Document
