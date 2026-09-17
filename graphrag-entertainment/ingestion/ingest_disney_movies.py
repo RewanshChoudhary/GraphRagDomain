@@ -1,11 +1,15 @@
+import logging
 import math
 
 import pandas as pd
 
-from ingestion.review_chunking import chunk_document, insert_chunk
 from ingestion.db_conn import get_postgres_connection
 from ingestion.document_store import insert_documents
+from ingestion.embed_texts import embed_text
 from ingestion.models import Document
+from ingestion.sentence_chunking import chunk_document_sentence, insert_chunks_sentence
+
+logger = logging.getLogger(__name__)
 
 CSV_PATH = (
     "/home/rewansh57/Programming/GraphRagForMovies/"
@@ -164,17 +168,18 @@ def ingest_documents_and_chunks(documents: list[Document]):
                 document
             )[0]
 
-            chunks = chunk_document(
+            chunks = chunk_document_sentence(
             document,
             document_id
             )
+            embedding_list=embed_text(chunks)
 
        
 
             for chunk in chunks:
-                insert_chunk(
-                    conn,
-                    chunk
+                insert_chunks_sentence(
+                    chunk,conn
+
                 )
         conn.commit()
 

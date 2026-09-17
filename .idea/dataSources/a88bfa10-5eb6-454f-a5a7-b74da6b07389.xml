@@ -11,9 +11,8 @@
 4||10|c|G
 4||10|C|G
 4||10|T|G</Grants>
-      <IntrospectionStateNumber>750</IntrospectionStateNumber>
       <ServerVersion>16.15</ServerVersion>
-      <StartupTime>1789316278</StartupTime>
+      <StartupTime>1789604606</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -1409,7 +1408,6 @@ true posixrules
 13276||10|C|G
 13276||-9223372036854775808|U|G
 13276||10|U|G</Grants>
-      <IntrospectionStateNumber>755</IntrospectionStateNumber>
       <ObjectId>16384</ObjectId>
       <OwnerName>graphrag</OwnerName>
     </database>
@@ -1418,7 +1416,52 @@ true posixrules
       <ObjectId>5</ObjectId>
       <OwnerName>graphrag</OwnerName>
     </database>
-    <role id="4" parent="1" name="graphrag">
+    <role id="4" parent="1" name="pg_database_owner">
+      <ObjectId>6171</ObjectId>
+    </role>
+    <role id="5" parent="1" name="pg_read_all_data">
+      <ObjectId>6181</ObjectId>
+    </role>
+    <role id="6" parent="1" name="pg_write_all_data">
+      <ObjectId>6182</ObjectId>
+    </role>
+    <role id="7" parent="1" name="pg_monitor">
+      <ObjectId>3373</ObjectId>
+      <RoleGrants>3374
+3375
+3377</RoleGrants>
+    </role>
+    <role id="8" parent="1" name="pg_read_all_settings">
+      <ObjectId>3374</ObjectId>
+    </role>
+    <role id="9" parent="1" name="pg_read_all_stats">
+      <ObjectId>3375</ObjectId>
+    </role>
+    <role id="10" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
+    </role>
+    <role id="11" parent="1" name="pg_read_server_files">
+      <ObjectId>4569</ObjectId>
+    </role>
+    <role id="12" parent="1" name="pg_write_server_files">
+      <ObjectId>4570</ObjectId>
+    </role>
+    <role id="13" parent="1" name="pg_execute_server_program">
+      <ObjectId>4571</ObjectId>
+    </role>
+    <role id="14" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
+    </role>
+    <role id="15" parent="1" name="pg_checkpoint">
+      <ObjectId>4544</ObjectId>
+    </role>
+    <role id="16" parent="1" name="pg_use_reserved_connections">
+      <ObjectId>4550</ObjectId>
+    </role>
+    <role id="17" parent="1" name="pg_create_subscription">
+      <ObjectId>6304</ObjectId>
+    </role>
+    <role id="18" parent="1" name="graphrag">
       <BypassRls>1</BypassRls>
       <CanLogin>1</CanLogin>
       <CreateDb>1</CreateDb>
@@ -1426,51 +1469,6 @@ true posixrules
       <ObjectId>10</ObjectId>
       <Replication>1</Replication>
       <SuperRole>1</SuperRole>
-    </role>
-    <role id="5" parent="1" name="pg_checkpoint">
-      <ObjectId>4544</ObjectId>
-    </role>
-    <role id="6" parent="1" name="pg_create_subscription">
-      <ObjectId>6304</ObjectId>
-    </role>
-    <role id="7" parent="1" name="pg_database_owner">
-      <ObjectId>6171</ObjectId>
-    </role>
-    <role id="8" parent="1" name="pg_execute_server_program">
-      <ObjectId>4571</ObjectId>
-    </role>
-    <role id="9" parent="1" name="pg_monitor">
-      <ObjectId>3373</ObjectId>
-      <RoleGrants>3374
-3375
-3377</RoleGrants>
-    </role>
-    <role id="10" parent="1" name="pg_read_all_data">
-      <ObjectId>6181</ObjectId>
-    </role>
-    <role id="11" parent="1" name="pg_read_all_settings">
-      <ObjectId>3374</ObjectId>
-    </role>
-    <role id="12" parent="1" name="pg_read_all_stats">
-      <ObjectId>3375</ObjectId>
-    </role>
-    <role id="13" parent="1" name="pg_read_server_files">
-      <ObjectId>4569</ObjectId>
-    </role>
-    <role id="14" parent="1" name="pg_signal_backend">
-      <ObjectId>4200</ObjectId>
-    </role>
-    <role id="15" parent="1" name="pg_stat_scan_tables">
-      <ObjectId>3377</ObjectId>
-    </role>
-    <role id="16" parent="1" name="pg_use_reserved_connections">
-      <ObjectId>4550</ObjectId>
-    </role>
-    <role id="17" parent="1" name="pg_write_all_data">
-      <ObjectId>6182</ObjectId>
-    </role>
-    <role id="18" parent="1" name="pg_write_server_files">
-      <ObjectId>4570</ObjectId>
     </role>
     <tablespace id="19" parent="1" name="pg_default">
       <ObjectId>1663</ObjectId>
@@ -5439,9 +5437,6 @@ true posixrules
       <AutoIntrospectionLevel>3</AutoIntrospectionLevel>
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <LastIntrospectionL1Xid>750</LastIntrospectionL1Xid>
-      <LastIntrospectionL2Xid>750</LastIntrospectionL2Xid>
-      <LastIntrospectionL3Xid>750</LastIntrospectionL3Xid>
       <LastIntrospectionLevel>3</LastIntrospectionLevel>
       <LastIntrospectionLocalTimestamp>2026-09-13.16:22:00</LastIntrospectionLocalTimestamp>
       <LastIntrospectionVersion>260210</LastIntrospectionVersion>
@@ -5460,15 +5455,15 @@ true posixrules
     </sequence>
     <table id="292" parent="290" name="chunk">
       <DetailsLevel>2</DetailsLevel>
-      <ObjectId>16728</ObjectId>
-      <StateNumber>754</StateNumber>
+      <ObjectId>19826</ObjectId>
+      <StateNumber>767</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>graphrag</OwnerName>
     </table>
     <table id="293" parent="290" name="document">
       <DetailsLevel>2</DetailsLevel>
-      <ObjectId>16390</ObjectId>
-      <StateNumber>754</StateNumber>
+      <ObjectId>19816</ObjectId>
+      <StateNumber>767</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>graphrag</OwnerName>
     </table>
@@ -5476,135 +5471,147 @@ true posixrules
       <DefaultExpression>nextval(&apos;chunk_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>754</StateNumber>
+      <StateNumber>767</StateNumber>
       <StoredType>bigint|0s</StoredType>
-      <SequenceId>16727</SequenceId>
+      <SequenceId>19825</SequenceId>
       <TypeId>20</TypeId>
     </column>
     <column id="295" parent="292" name="document_id">
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>754</StateNumber>
+      <StateNumber>767</StateNumber>
       <StoredType>bigint|0s</StoredType>
       <TypeId>20</TypeId>
     </column>
     <column id="296" parent="292" name="chunk_index">
       <NotNull>1</NotNull>
       <Position>3</Position>
-      <StateNumber>754</StateNumber>
+      <StateNumber>767</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
     <column id="297" parent="292" name="content">
       <NotNull>1</NotNull>
       <Position>4</Position>
-      <StateNumber>754</StateNumber>
+      <StateNumber>767</StateNumber>
       <StoredType>text|0s</StoredType>
       <TypeId>25</TypeId>
     </column>
     <column id="298" parent="292" name="token_count">
       <Position>5</Position>
-      <StateNumber>754</StateNumber>
+      <StateNumber>767</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
-    <column id="299" parent="292" name="embedding">
+    <column id="299" parent="292" name="start_sentence">
       <Position>6</Position>
-      <StateNumber>754</StateNumber>
-      <StoredType>vector(1536)|0s</StoredType>
-      <TypeId>16400</TypeId>
+      <StateNumber>767</StateNumber>
+      <StoredType>integer|0s</StoredType>
+      <TypeId>23</TypeId>
     </column>
-    <foreign-key id="300" parent="292" name="chunk_document_id_fkey">
+    <column id="300" parent="292" name="end_sentence">
+      <Position>7</Position>
+      <StateNumber>767</StateNumber>
+      <StoredType>integer|0s</StoredType>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="301" parent="292" name="embedding">
+      <Position>8</Position>
+      <StateNumber>767</StateNumber>
+      <StoredType>vector(1536)|0s</StoredType>
+      <TypeId>18577</TypeId>
+    </column>
+    <foreign-key id="302" parent="292" name="chunk_document_id_fkey">
       <ColNames>document_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16738</ObjectId>
+      <ObjectId>19836</ObjectId>
       <OnDelete>cascade</OnDelete>
-      <StateNumber>754</StateNumber>
+      <StateNumber>767</StateNumber>
       <RefKeyColPositions>1</RefKeyColPositions>
-      <RefTableId>16390</RefTableId>
+      <RefTableId>19816</RefTableId>
     </foreign-key>
-    <index id="301" parent="292" name="chunk_pkey">
+    <index id="303" parent="292" name="chunk_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16734</ObjectId>
+      <ObjectId>19832</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>754</StateNumber>
+      <StateNumber>767</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <index id="302" parent="292" name="chunk_document_id_chunk_index_key">
+    <index id="304" parent="292" name="chunk_document_id_chunk_index_key">
       <ColNames>document_id
 chunk_index</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16736</ObjectId>
-      <StateNumber>754</StateNumber>
+      <ObjectId>19834</ObjectId>
+      <StateNumber>767</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="303" parent="292" name="chunk_pkey">
+    <key id="305" parent="292" name="chunk_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16735</ObjectId>
+      <ObjectId>19833</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>754</StateNumber>
-      <UnderlyingIndexId>16734</UnderlyingIndexId>
+      <StateNumber>767</StateNumber>
+      <UnderlyingIndexId>19832</UnderlyingIndexId>
     </key>
-    <key id="304" parent="292" name="chunk_document_id_chunk_index_key">
+    <key id="306" parent="292" name="chunk_document_id_chunk_index_key">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16737</ObjectId>
-      <StateNumber>754</StateNumber>
-      <UnderlyingIndexId>16736</UnderlyingIndexId>
+      <ObjectId>19835</ObjectId>
+      <StateNumber>767</StateNumber>
+      <UnderlyingIndexId>19834</UnderlyingIndexId>
     </key>
-    <column id="305" parent="293" name="id">
+    <column id="307" parent="293" name="id">
       <DefaultExpression>nextval(&apos;document_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>745</StateNumber>
+      <StateNumber>766</StateNumber>
       <StoredType>bigint|0s</StoredType>
-      <SequenceId>16389</SequenceId>
+      <SequenceId>19815</SequenceId>
       <TypeId>20</TypeId>
     </column>
-    <column id="306" parent="293" name="title">
+    <column id="308" parent="293" name="title">
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>745</StateNumber>
+      <StateNumber>766</StateNumber>
       <StoredType>text|0s</StoredType>
       <TypeId>25</TypeId>
     </column>
-    <column id="307" parent="293" name="content">
+    <column id="309" parent="293" name="content">
       <NotNull>1</NotNull>
       <Position>3</Position>
-      <StateNumber>745</StateNumber>
+      <StateNumber>766</StateNumber>
       <StoredType>text|0s</StoredType>
       <TypeId>25</TypeId>
     </column>
-    <column id="308" parent="293" name="metadata">
+    <column id="310" parent="293" name="metadata">
       <Position>4</Position>
-      <StateNumber>745</StateNumber>
+      <StateNumber>766</StateNumber>
       <StoredType>jsonb|0s</StoredType>
       <TypeId>3802</TypeId>
     </column>
-    <column id="309" parent="293" name="created_at">
+    <column id="311" parent="293" name="created_at">
       <DefaultExpression>now()</DefaultExpression>
       <Position>5</Position>
-      <StateNumber>745</StateNumber>
+      <StateNumber>766</StateNumber>
       <StoredType>timestamp with time zone|0s</StoredType>
       <TypeId>1184</TypeId>
     </column>
-    <index id="310" parent="293" name="document_pkey">
+    <index id="312" parent="293" name="document_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16397</ObjectId>
+      <ObjectId>19823</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>745</StateNumber>
+      <StateNumber>766</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="311" parent="293" name="document_pkey">
+    <key id="313" parent="293" name="document_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16398</ObjectId>
+      <ObjectId>19824</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>745</StateNumber>
-      <UnderlyingIndexId>16397</UnderlyingIndexId>
+      <StateNumber>766</StateNumber>
+      <UnderlyingIndexId>19823</UnderlyingIndexId>
     </key>
   </database-model>
 </dataSource>
