@@ -8,6 +8,7 @@ from ingestion.document_store import insert_documents
 from ingestion.embed_texts import embed_text
 from ingestion.models import Document
 from ingestion.sentence_chunking import chunk_document_sentence, insert_chunks_sentence
+from logging_config import setup_logging
 
 logger = logging.getLogger(__name__)
 
@@ -18,6 +19,7 @@ CSV_PATH = (
 
 
 def ensure_schema():
+    logger.info("Ensuring database schema")
     conn = get_postgres_connection()
 
     try:
@@ -45,6 +47,7 @@ def ensure_schema():
             """)
 
         conn.commit()
+        logger.info("Schema ensured successfully")
 
     finally:
         conn.close()
@@ -80,9 +83,10 @@ def load_disney_movies(csv_path: str) -> pd.DataFrame:
         != ""
     ]
 
-    print(
-        f"Found {len(disney_df)} Disney review rows "
-        f"across {disney_df['movie_title'].nunique()} movies"
+    logger.info(
+        "Found %d Disney review rows across %d movies",
+        len(disney_df),
+        disney_df["movie_title"].nunique(),
     )
 
     return disney_df
@@ -152,16 +156,16 @@ def build_documents(df: pd.DataFrame) -> list[Document]:
             )
         )
 
-    print(f"Built {len(documents)} document objects")
+    logger.info("Built %d document objects", len(documents))
 
     return documents
 
 
 def ingest_documents_and_chunks(documents: list[Document]):
+    logger.info("Ingesting %d documents with chunks", len(documents))
     conn = get_postgres_connection()
 
     try:
-
         for document in documents:
             document_id = insert_documents(
                 conn,
@@ -169,47 +173,39 @@ def ingest_documents_and_chunks(documents: list[Document]):
             )[0]
 
             chunks = chunk_document_sentence(
-            document,
-            document_id
+                document,
+                document_id
             )
-            embedding_list=embed_text(chunks)
+            embedding_list = embed_text(chunks)
 
-       
-
-            for chunk in chunks:
+            for chunk,embed in zip(chunks,embedding_list):
                 insert_chunks_sentence(
-                    chunk,conn
-
+                    chunk, conn,embed
                 )
         conn.commit()
 
-        print(
-            f"Successfully inserted "
-            f"{len(documents)} documents and their chunks"
+        logger.info(
+            "Successfully inserted %d documents and their chunks",
+            len(documents),
         )
 
     except Exception:
-
-       
+        logger.exception("Error ingesting documents, rolling back")
         conn.rollback()
-
         raise
 
     finally:
-
         conn.close()
 
 
 def main():
-
-
+    setup_logging()
+    logger.info("Starting Disney movie ingestion pipeline")
     ensure_schema()
-
     df = load_disney_movies(CSV_PATH)
-
     documents = build_documents(df)
-
     ingest_documents_and_chunks(documents)
+    logger.info("Ingestion pipeline complete")
 
 
 if __name__ == "__main__":

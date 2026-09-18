@@ -5,16 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac50e3fd-4cae-4ef9-8e7f-a01a3bce28ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/graphrag-entertainment/ingestion/embed_texts.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/a88bfa10-5eb6-454f-a5a7-b74da6b07389.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a88bfa10-5eb6-454f-a5a7-b74da6b07389.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphrag-entertainment/.env" beforeDir="false" afterPath="$PROJECT_DIR$/graphrag-entertainment/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphrag-entertainment/demo/naive_vs_graph_rag.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/graphrag-entertainment/demo/naive_vs_graph_rag.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphrag-entertainment/ingestion/db_conn.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphrag-entertainment/ingestion/db_conn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphrag-entertainment/ingestion/document_store.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphrag-entertainment/ingestion/document_store.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphrag-entertainment/ingestion/embed_texts.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphrag-entertainment/ingestion/embed_texts.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/graphrag-entertainment/ingestion/ingest_disney_movies.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphrag-entertainment/ingestion/ingest_disney_movies.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/graphrag-entertainment/ingestion/sentence_chunking.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphrag-entertainment/ingestion/sentence_chunking.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphrag-entertainment/ingestion/sentence_splitter.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphrag-entertainment/ingestion/sentence_splitter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphrag-entertainment/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/graphrag-entertainment/pyproject.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphrag-entertainment/uv.lock" beforeDir="false" afterPath="$PROJECT_DIR$/graphrag-entertainment/uv.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphrag-entertainment/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphrag-entertainment/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphrag-entertainment/model_interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphrag-entertainment/model_interface.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +26,7 @@
     </colors>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="54" />
+    <option name="cachedIndexableFilesCount" value="57" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -47,61 +46,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.00013174365642" />
-      <entry key="MS500" value="1.1855705385607922" />
-      <entry key="S2" value="2.1367393486595434" />
-      <entry key="S5" value="3.5285790446258307" />
-      <entry key="S10" value="5.206775929472985" />
-      <entry key="S30" value="10.656091382109642" />
-      <entry key="S60" value="15.739216364154766" />
-      <entry key="M2" value="23.1419399548535" />
-      <entry key="M5" value="43.35685823475174" />
-      <entry key="M10" value="69.16888509051337" />
-      <entry key="M15" value="93.43903409030511" />
-      <entry key="M30" value="170.88347338023803" />
-      <entry key="H1" value="323.0923900143702" />
-      <entry key="H2" value="525.990478855555" />
-      <entry key="H4" value="706.4649919379322" />
-      <entry key="D1" value="927.3986701741553" />
-      <entry key="W1" value="973.9530886380816" />
+      <entry key="MS100" value="1.6740681866368908E-204" />
+      <entry key="MS500" value="2.1557985887810536E-41" />
+      <entry key="S2" value="2.5204278268787813E-10" />
+      <entry key="S5" value="5.613103698185386E-4" />
+      <entry key="S10" value="0.1008688718704329" />
+      <entry key="S30" value="5.390954917103718" />
+      <entry key="S60" value="16.371406381241975" />
+      <entry key="M2" value="31.027119630557458" />
+      <entry key="M5" value="58.22710992509535" />
+      <entry key="M10" value="89.9819580568729" />
+      <entry key="M15" value="117.0633838029842" />
+      <entry key="M30" value="196.97815332015608" />
+      <entry key="H1" value="350.7234055395382" />
+      <entry key="H2" value="558.3056299023656" />
+      <entry key="H4" value="745.5385931549359" />
+      <entry key="D1" value="977.3421324722818" />
+      <entry key="W1" value="1026.494229970301" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="1.981025692372961E-80" />
-      <entry key="S2" value="1.1863764767868682E-20" />
-      <entry key="S5" value="1.0707533390580382E-8" />
-      <entry key="S10" value="1.0361711239662047E-4" />
-      <entry key="S30" value="0.055485152609616256" />
-      <entry key="S60" value="0.3837033498917583" />
-      <entry key="M2" value="1.4293548333148436" />
-      <entry key="M5" value="4.085351881959532" />
-      <entry key="M10" value="6.7575620036474655" />
-      <entry key="M15" value="8.76540076839807" />
-      <entry key="M30" value="13.57277158517136" />
-      <entry key="H1" value="20.931666175982414" />
-      <entry key="H2" value="29.358679482717918" />
-      <entry key="H4" value="36.21650797319273" />
-      <entry key="D1" value="44.11270449033537" />
-      <entry key="W1" value="45.72324932309894" />
+      <entry key="MS100" value="1.0000000000000062" />
+      <entry key="MS500" value="1.0014397160325108" />
+      <entry key="S2" value="1.194791144915125" />
+      <entry key="S5" value="1.5197897175876394" />
+      <entry key="S10" value="1.720964435733522" />
+      <entry key="S30" value="1.8968362505005423" />
+      <entry key="S60" value="1.9627621368583306" />
+      <entry key="M2" value="2.2215731061557906" />
+      <entry key="M5" value="4.006215832061783" />
+      <entry key="M10" value="6.87061935667989" />
+      <entry key="M15" value="9.158342297264827" />
+      <entry key="M30" value="14.474164956702332" />
+      <entry key="H1" value="22.289510200500796" />
+      <entry key="H2" value="31.199335363884334" />
+      <entry key="H4" value="38.4987730609279" />
+      <entry key="D1" value="46.96649038974711" />
+      <entry key="W1" value="48.701585001313774" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.04095148922161215" />
-      <entry key="MS500" value="0.6050128352834108" />
-      <entry key="S2" value="1.747313506896508" />
-      <entry key="S5" value="3.2239744875844982" />
-      <entry key="S10" value="4.971758228681878" />
-      <entry key="S30" value="10.531750762359415" />
-      <entry key="S60" value="15.976312642974294" />
-      <entry key="M2" value="24.450666492543032" />
-      <entry key="M5" value="47.35203479812004" />
-      <entry key="M10" value="75.86229110756175" />
-      <entry key="M15" value="102.15287213627789" />
-      <entry key="M30" value="184.4200821446248" />
-      <entry key="H1" value="343.99813458057497" />
-      <entry key="H2" value="555.3317174911323" />
-      <entry key="H4" value="742.6709424640994" />
-      <entry key="D1" value="971.5092591510108" />
-      <entry key="W1" value="1019.6760253078368" />
+      <entry key="MS100" value="0.0014497300494424326" />
+      <entry key="MS500" value="0.27082742791088554" />
+      <entry key="S2" value="0.8495505397188221" />
+      <entry key="S5" value="1.3178924536631935" />
+      <entry key="S10" value="1.7001219548163808" />
+      <entry key="S30" value="7.234986038830545" />
+      <entry key="S60" value="18.30064976135439" />
+      <entry key="M2" value="33.21733597454193" />
+      <entry key="M5" value="62.18775509804555" />
+      <entry key="M10" value="96.80657403532953" />
+      <entry key="M15" value="126.17989537938145" />
+      <entry key="M30" value="211.4192192560708" />
+      <entry key="H1" value="372.9878275813563" />
+      <entry key="H2" value="589.4876273904454" />
+      <entry key="H4" value="784.026728449513" />
+      <entry key="D1" value="1024.3064665470993" />
+      <entry key="W1" value="1075.195495646621" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -117,6 +116,7 @@
   &quot;keyToString&quot;: {
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;Python.document_store.executor&quot;: &quot;Run&quot;,
+    &quot;Python.embed_texts.executor&quot;: &quot;Run&quot;,
     &quot;Python.ingest_disney_movies.executor&quot;: &quot;Run&quot;,
     &quot;Python.models.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
@@ -176,7 +176,9 @@
       <workItem from="1789493554727" duration="3296000" />
       <workItem from="1789497256015" duration="449000" />
       <workItem from="1789497840107" duration="2243000" />
-      <workItem from="1789603360883" duration="3386000" />
+      <workItem from="1789603360883" duration="4075000" />
+      <workItem from="1789735298524" duration="1804000" />
+      <workItem from="1789737758061" duration="304000" />
     </task>
     <servers />
   </component>
@@ -185,7 +187,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GraphRagForMovies$models.coverage" NAME="models Coverage Results" MODIFIED="1789494505971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graphrag-entertainment/ingestion" />
-    <SUITE FILE_PATH="coverage/GraphRagForMovies$ingest_disney_movies.coverage" NAME="ingest_disney_movies Coverage Results" MODIFIED="1789604994219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graphrag-entertainment/ingestion" />
+    <SUITE FILE_PATH="coverage/GraphRagForMovies$embed_texts.coverage" NAME="embed_texts Coverage Results" MODIFIED="1789736245210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graphrag-entertainment/ingestion" />
+    <SUITE FILE_PATH="coverage/GraphRagForMovies$ingest_disney_movies.coverage" NAME="ingest_disney_movies Coverage Results" MODIFIED="1789736250389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graphrag-entertainment/ingestion" />
     <SUITE FILE_PATH="coverage/GraphRagForMovies$document_store.coverage" NAME="document_store Coverage Results" MODIFIED="1789348553219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graphrag-entertainment/ingestion" />
   </component>
 </project>

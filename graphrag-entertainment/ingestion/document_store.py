@@ -1,4 +1,7 @@
 import json
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 def insert_documents(conn, documents):
@@ -27,4 +30,5 @@ def insert_documents(conn, documents):
             )
             ids.append(cur.fetchone()[0])
 
+    logger.info("Inserted %d document(s)", len(ids))
     return ids

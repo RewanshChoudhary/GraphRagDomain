@@ -1,20 +1,24 @@
 import logging
 
-import numpy as np
+
+from sentence_transformers import SentenceTransformer
 
 from ingestion.models import Chunk
 
+logger = logging.getLogger(__name__)
+model = SentenceTransformer("all-MiniLM-L6-v2")
 
-def embed_text(chunks:list[Chunk])->list[list[float]]:
-    model = SentenceTransformer("all-MiniLM-L6-v2")
+def embed_text(chunks: list[Chunk]) -> list[list[float]]:
+    logger.info("Embedding %d chunks", len(chunks))
 
-    valid_texts=[
+
+    valid_texts = [
         chunk.content for chunk in chunks
-        if chunk is not None and chunk.content !=""
+        if chunk is not None and chunk.content != ""
     ]
 
-    embeddings=model.encode(valid_texts)
-    logging.info(f"Embeddings shape: {embeddings.shape}")
+    embeddings = model.encode(valid_texts)
+    logger.info("Embeddings shape: %s", embeddings.shape)
 
     return embeddings.tolist()
 

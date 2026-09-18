@@ -12,7 +12,7 @@
 4||10|C|G
 4||10|T|G</Grants>
       <ServerVersion>16.15</ServerVersion>
-      <StartupTime>1789604606</StartupTime>
+      <StartupTime>1789735245</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -5456,7 +5456,7 @@ true posixrules
     <table id="292" parent="290" name="chunk">
       <DetailsLevel>2</DetailsLevel>
       <ObjectId>19826</ObjectId>
-      <StateNumber>767</StateNumber>
+      <StateNumber>780</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>graphrag</OwnerName>
     </table>
@@ -5517,8 +5517,8 @@ true posixrules
     </column>
     <column id="301" parent="292" name="embedding">
       <Position>8</Position>
-      <StateNumber>767</StateNumber>
-      <StoredType>vector(1536)|0s</StoredType>
+      <StateNumber>780</StateNumber>
+      <StoredType>vector(384)|0s</StoredType>
       <TypeId>18577</TypeId>
     </column>
     <foreign-key id="302" parent="292" name="chunk_document_id_fkey">
@@ -5535,7 +5535,7 @@ true posixrules
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>19832</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>767</StateNumber>
+      <StateNumber>780</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
@@ -5544,7 +5544,7 @@ true posixrules
 chunk_index</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>19834</ObjectId>
-      <StateNumber>767</StateNumber>
+      <StateNumber>780</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
