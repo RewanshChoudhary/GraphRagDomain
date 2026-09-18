@@ -1,7 +1,7 @@
-from dataclasses import dataclass, Field
+from dataclasses import dataclass
 from typing import Any
-import numpy as np
-from pydantic import BaseModel
+
+from pydantic import BaseModel, Field
 
 
 @dataclass
@@ -20,8 +20,19 @@ class Chunk:
     vector: list[float] | None = None
 
 
-class Entity(BaseModel):
-    type:str
-    name:str
-    description:str | None =None
 
+class Entity(BaseModel):
+    name: str
+    type: str
+
+
+class Relationship(BaseModel):
+    source: str
+    target: str
+    type: str
+    source_chunk_id: int | None = None
+
+
+class GraphExtraction(BaseModel):
+    entities: list[Entity] = Field(default_factory=list)
+    relationships: list[Relationship] = Field(default_factory=list)
