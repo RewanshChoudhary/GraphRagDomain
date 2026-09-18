@@ -22,7 +22,7 @@ CREATE TABLE chunk (
 
     end_sentence INT,
 
-    embedding vector(1536),
+    embedding vector(384),
 
     UNIQUE(document_id, chunk_index)
 );

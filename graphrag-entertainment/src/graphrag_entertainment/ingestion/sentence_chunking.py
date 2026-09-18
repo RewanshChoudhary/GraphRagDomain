@@ -2,6 +2,7 @@ import logging
 
 from .models import Chunk, Document
 from .sentence_splitter import group_sentences, split_sentences
+from .token_counter import count_tokens
 
 logger = logging.getLogger(__name__)
 
@@ -16,6 +17,7 @@ def chunk_document_sentence(document: Document, document_id: int) -> list[Chunk]
             document_id=document_id,
             chunk_index=i,
             content=sent,
+            token_count=count_tokens(sent),
         ) for i, sent in enumerate(sentence_groups)
     ]
 

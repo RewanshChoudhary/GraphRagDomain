@@ -1,5 +1,6 @@
 
 from .models import Chunk, Document
+from .token_counter import count_tokens
 
 
 def chunk_document(document:Document,document_id:int)-> list[Chunk]:
@@ -7,8 +8,8 @@ def chunk_document(document:Document,document_id:int)-> list[Chunk]:
         Chunk(
             document_id=document_id,
             chunk_index=0,
-            content=document.content
-
+            content=document.content,
+            token_count=count_tokens(document.content),
         )
     ]
 

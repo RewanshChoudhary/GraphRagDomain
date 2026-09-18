@@ -1,20 +1,22 @@
 import logging
 import math
+from pathlib import Path
 
 import pandas as pd
 
-from .db_conn import get_postgres_connection
-from .document_store import insert_documents
-from .embed_texts import embed_text
-from .models import Document
-from .sentence_chunking import chunk_document_sentence, insert_chunks_sentence
-from ..logging_config import setup_logging
+from graphrag_entertainment.ingestion.db_conn import get_postgres_connection
+from graphrag_entertainment.ingestion.document_store import insert_documents
+from graphrag_entertainment.ingestion.embed_texts import embed_text
+from graphrag_entertainment.ingestion.models import Document
+from graphrag_entertainment.ingestion.sentence_chunking import chunk_document_sentence, insert_chunks_sentence
+from graphrag_entertainment.logging_config import setup_logging
 
 logger = logging.getLogger(__name__)
 
 CSV_PATH = (
-    "/home/rewansh57/Programming/GraphRagForMovies/"
-    "graphrag-entertainment/movies_with_reviews_cleaned.csv"
+    Path(__file__).resolve().parents[3]
+    / "data"
+    / "movies_with_reviews_cleaned.csv"
 )
 
 

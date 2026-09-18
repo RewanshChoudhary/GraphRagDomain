@@ -3,9 +3,10 @@ import logging
 from sentence_transformers import SentenceTransformer
 
 from .models import Chunk
+from .token_counter import EMBEDDING_MODEL_NAME
 
 logger = logging.getLogger(__name__)
-model = SentenceTransformer("all-MiniLM-L6-v2")
+model = SentenceTransformer(EMBEDDING_MODEL_NAME)
 
 def embed_text(chunks: list[Chunk]) -> list[list[float]]:
     logger.info("Embedding %d chunks", len(chunks))

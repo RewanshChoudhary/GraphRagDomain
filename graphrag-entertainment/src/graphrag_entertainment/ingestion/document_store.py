@@ -9,7 +9,6 @@ def insert_documents(conn, documents):
 
     if not isinstance(documents, list):
         documents = [documents]
-
     with conn.cursor() as cur:
         for doc in documents:
             cur.execute(
