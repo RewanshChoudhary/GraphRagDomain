@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac50e3fd-4cae-4ef9-8e7f-a01a3bce28ed" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a88bfa10-5eb6-454f-a5a7-b74da6b07389.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a88bfa10-5eb6-454f-a5a7-b74da6b07389.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphrag-entertainment/ingestion/db_conn.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphrag-entertainment/ingestion/db_conn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphrag-entertainment/ingestion/document_store.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphrag-entertainment/ingestion/document_store.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/graphrag-entertainment/ingestion/embed_texts.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphrag-entertainment/ingestion/embed_texts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphrag-entertainment/ingestion/ingest_disney_movies.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphrag-entertainment/ingestion/ingest_disney_movies.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphrag-entertainment/ingestion/sentence_chunking.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphrag-entertainment/ingestion/sentence_chunking.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphrag-entertainment/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphrag-entertainment/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphrag-entertainment/model_interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphrag-entertainment/model_interface.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphrag-entertainment/ingestion/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphrag-entertainment/ingestion/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,61 +40,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.6740681866368908E-204" />
-      <entry key="MS500" value="2.1557985887810536E-41" />
-      <entry key="S2" value="2.5204278268787813E-10" />
-      <entry key="S5" value="5.613103698185386E-4" />
-      <entry key="S10" value="0.1008688718704329" />
-      <entry key="S30" value="5.390954917103718" />
-      <entry key="S60" value="16.371406381241975" />
-      <entry key="M2" value="31.027119630557458" />
-      <entry key="M5" value="58.22710992509535" />
-      <entry key="M10" value="89.9819580568729" />
-      <entry key="M15" value="117.0633838029842" />
-      <entry key="M30" value="196.97815332015608" />
-      <entry key="H1" value="350.7234055395382" />
-      <entry key="H2" value="558.3056299023656" />
-      <entry key="H4" value="745.5385931549359" />
-      <entry key="D1" value="977.3421324722818" />
-      <entry key="W1" value="1026.494229970301" />
+      <entry key="MS100" value="1.6638673576042147" />
+      <entry key="MS500" value="4.05915058256321" />
+      <entry key="S2" value="7.3670923630064715" />
+      <entry key="S5" value="11.787728531878004" />
+      <entry key="S10" value="15.049174990645803" />
+      <entry key="S30" value="22.491149353516647" />
+      <entry key="S60" value="33.81995605425214" />
+      <entry key="M2" value="49.01076873119895" />
+      <entry key="M5" value="76.87290613093998" />
+      <entry key="M10" value="108.9869880387118" />
+      <entry key="M15" value="136.21982451160102" />
+      <entry key="M30" value="216.290887963195" />
+      <entry key="H1" value="370.1245608709574" />
+      <entry key="H2" value="577.8339132382955" />
+      <entry key="H4" value="765.2250234777134" />
+      <entry key="D1" value="997.2738340634459" />
+      <entry key="W1" value="1046.4839872425796" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0000000000000062" />
-      <entry key="MS500" value="1.0014397160325108" />
-      <entry key="S2" value="1.194791144915125" />
-      <entry key="S5" value="1.5197897175876394" />
-      <entry key="S10" value="1.720964435733522" />
-      <entry key="S30" value="1.8968362505005423" />
-      <entry key="S60" value="1.9627621368583306" />
-      <entry key="M2" value="2.2215731061557906" />
-      <entry key="M5" value="4.006215832061783" />
-      <entry key="M10" value="6.87061935667989" />
-      <entry key="M15" value="9.158342297264827" />
-      <entry key="M30" value="14.474164956702332" />
-      <entry key="H1" value="22.289510200500796" />
-      <entry key="H2" value="31.199335363884334" />
-      <entry key="H4" value="38.4987730609279" />
-      <entry key="D1" value="46.96649038974711" />
-      <entry key="W1" value="48.701585001313774" />
+      <entry key="MS100" value="1.13298633988389E-26" />
+      <entry key="MS500" value="6.47842963104642E-6" />
+      <entry key="S2" value="0.060256406600629094" />
+      <entry key="S5" value="0.46011669897318525" />
+      <entry key="S10" value="0.9469218596275321" />
+      <entry key="S30" value="1.5543324828830694" />
+      <entry key="S60" value="1.7767434073164987" />
+      <entry key="M2" value="2.113679473462968" />
+      <entry key="M5" value="3.927224705043385" />
+      <entry key="M10" value="6.802547652069834" />
+      <entry key="M15" value="9.097750188247113" />
+      <entry key="M30" value="14.426204552144513" />
+      <entry key="H1" value="22.252551213602672" />
+      <entry key="H2" value="31.17345829861872" />
+      <entry key="H4" value="38.48280410022243" />
+      <entry key="D1" value="46.963242945581584" />
+      <entry key="W1" value="48.701103927730124" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.0014497300494424326" />
-      <entry key="MS500" value="0.27082742791088554" />
-      <entry key="S2" value="0.8495505397188221" />
-      <entry key="S5" value="1.3178924536631935" />
-      <entry key="S10" value="1.7001219548163808" />
-      <entry key="S30" value="7.234986038830545" />
-      <entry key="S60" value="18.30064976135439" />
-      <entry key="M2" value="33.21733597454193" />
-      <entry key="M5" value="62.18775509804555" />
-      <entry key="M10" value="96.80657403532953" />
-      <entry key="M15" value="126.17989537938145" />
-      <entry key="M30" value="211.4192192560708" />
-      <entry key="H1" value="372.9878275813563" />
-      <entry key="H2" value="589.4876273904454" />
-      <entry key="H4" value="784.026728449513" />
-      <entry key="D1" value="1024.3064665470993" />
-      <entry key="W1" value="1075.195495646621" />
+      <entry key="MS100" value="1.5364956350183998" />
+      <entry key="MS500" value="3.997280108503032" />
+      <entry key="S2" value="7.37842082283808" />
+      <entry key="S5" value="12.161517449416204" />
+      <entry key="S10" value="15.911529343162702" />
+      <entry key="S30" value="23.99463003482042" />
+      <entry key="S60" value="35.56230212374329" />
+      <entry key="M2" value="51.092516133435744" />
+      <entry key="M5" value="80.75460189610615" />
+      <entry key="M10" value="115.74355672385275" />
+      <entry key="M15" value="145.27573248630043" />
+      <entry key="M30" value="230.6839587120873" />
+      <entry key="H1" value="392.35199321360614" />
+      <entry key="H2" value="608.990011864548" />
+      <entry key="H4" value="803.6971761304228" />
+      <entry key="D1" value="1044.234917826865" />
+      <entry key="W1" value="1095.1847714175485" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -178,7 +172,7 @@
       <workItem from="1789497840107" duration="2243000" />
       <workItem from="1789603360883" duration="4075000" />
       <workItem from="1789735298524" duration="1804000" />
-      <workItem from="1789737758061" duration="304000" />
+      <workItem from="1789737758061" duration="1283000" />
     </task>
     <servers />
   </component>

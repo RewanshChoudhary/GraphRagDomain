@@ -15,6 +15,7 @@ dependencies = [
     "langgraph>=1.2.11",
     "numpy>=2.5.3",
     "pandas>=3.0.5",
+    "pgvector>=0.5.0",
     "psycopg>=3.3.5",
     "sentence-transformers>=6.0.1",
     "spacy>=3.8.16",
@@ -22,7 +23,7 @@ dependencies = [
 ]
 
 [project.scripts]
-graphrag-entertainment = "graphrag_entertainment:main"
+graphrag-entertainment = "graphrag_entertainment.main:main"
 
 [build-system]
 requires = ["uv_build>=0.12.3,<0.13.0"]
