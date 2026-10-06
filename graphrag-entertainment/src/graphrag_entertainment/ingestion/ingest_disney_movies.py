@@ -17,6 +17,7 @@ logger = logging.getLogger(__name__)
 CSV_PATH = (
     Path(__file__).resolve().parents[3]
     / "data"
+    / "processed"
     / "movies_with_reviews_cleaned.csv"
 )
 
