@@ -3,6 +3,7 @@ import math
 from pathlib import Path
 
 import pandas as pd
+from pgvector.psycopg import register_vector
 
 from graphrag_entertainment.ingestion.db_conn import get_postgres_connection
 from graphrag_entertainment.ingestion.document_store import insert_documents
@@ -26,6 +27,8 @@ def ensure_schema():
 
     try:
         with conn.cursor() as cur:
+            cur.execute("CREATE EXTENSION IF NOT EXISTS vector")
+
             cur.execute("""
                 CREATE TABLE IF NOT EXISTS document (
                     id BIGSERIAL PRIMARY KEY,
@@ -44,8 +47,14 @@ def ensure_schema():
                     chunk_index INT NOT NULL,
                     content TEXT NOT NULL,
                     token_count INT,
+                    embedding vector(384),
                     UNIQUE(document_id, chunk_index)
                 )
+            """)
+
+            cur.execute("""
+                ALTER TABLE chunk
+                ADD COLUMN IF NOT EXISTS embedding vector(384)
             """)
 
         conn.commit()
@@ -168,6 +177,8 @@ def ingest_documents_and_chunks(documents: list[Document]):
     conn = get_postgres_connection()
 
     try:
+        register_vector(conn)
+
         for document in documents:
             document_id = insert_documents(
                 conn,

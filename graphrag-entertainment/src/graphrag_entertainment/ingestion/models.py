@@ -21,18 +21,3 @@ class Chunk:
 
 
 
-class Entity(BaseModel):
-    name: str
-    type: str
-
-
-class Relationship(BaseModel):
-    source: str
-    target: str
-    type: str
-    source_chunk_id: int | None = None
-
-
-class GraphExtraction(BaseModel):
-    entities: list[Entity] = Field(default_factory=list)
-    relationships: list[Relationship] = Field(default_factory=list)

@@ -6,21 +6,34 @@ import dotenv
 from langchain.agents import create_agent
 from langchain_google_genai import ChatGoogleGenerativeAI
 from pydantic import BaseModel
-from torch._C import OptionalType
 
 dotenv.load_dotenv()
 
 logger = logging.getLogger(__name__)
 
+provider = os.getenv("LLM_PROVIDER", "gemini").lower()
 model = os.getenv("LLM_MODEL")
 api_key = os.getenv("LLM_API_KEY")
+base_url = os.getenv("LLM_BASE_URL")
+temperature = float(os.getenv("LLM_TEMPERATURE", "0.0"))
 
-logger.info("Initializing LLM model: %s", model)
+logger.info("Initializing LLM model: %s (provider: %s)", model, provider)
 
-llm = ChatGoogleGenerativeAI(
-    model=model,
-    google_api_key=api_key
-)
+if provider == "lmstudio":
+    from langchain_openai import ChatOpenAI
+
+    llm = ChatOpenAI(
+        model=model,
+        api_key=api_key or "lm-studio",
+        base_url=base_url or "http://localhost:1234/v1",
+        temperature=temperature,
+    )
+else:
+    llm = ChatGoogleGenerativeAI(
+        model=model,
+        google_api_key=api_key,
+        temperature=temperature,
+    )
 
 
 def get_agent(structured_response: Optional[Type[BaseModel]],system_prompt:str,context_schema:Optional[Any]=None):
@@ -34,5 +47,3 @@ def get_agent(structured_response: Optional[Type[BaseModel]],system_prompt:str,c
     )
 
     return agent
-
-

@@ -32,15 +32,14 @@ def utc_now() -> datetime:
     """Return the current UTC time (timezone-aware)."""
     return datetime.now(timezone.utc)
 
-
 class EntityType(StrEnum):
-    """The kind of entity stored in the graph (also used as node labels)."""
-
+    FILM = "FILM"
     ACTOR = "ACTOR"
     DIRECTOR = "DIRECTOR"
-    FRANCHISE = "FRANCHISE"
+    WRITER = "WRITER"
+    CHARACTER = "CHARACTER"
+    GENRE = "GENRE"
     STUDIO = "STUDIO"
-    FILM = "FILM"
     CRITIC = "CRITIC"
     PUBLICATION = "PUBLICATION"
 
@@ -96,6 +95,8 @@ class Relationship(BaseModel):
     target_entity_id: str = Field(description="Foreign key to the target entity")
     description: str = Field(description="Human-readable description of the relationship")
     weight: float = Field(default=1.0, ge=0.0, le=1.0, description="Confidence weight in [0, 1]")
+    type:str = Field(description="Type of relationship (e.g. 'ACTED_IN', 'DIRECTED', 'REVIEWED_BY')")
+    
 
 
 class Claim(BaseModel):
