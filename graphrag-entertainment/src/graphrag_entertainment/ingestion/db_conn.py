@@ -3,6 +3,7 @@ import os
 
 import psycopg
 from dotenv import load_dotenv
+from neo4j import Driver, GraphDatabase
 
 load_dotenv()
 
@@ -21,5 +22,19 @@ def get_postgres_connection():
         user=os.getenv("POSTGRES_USER", "postgres"),
         password=os.getenv("POSTGRES_PASSWORD", "postgres"),
     )
+
+
+def get_neo4j_driver() -> Driver:
+    uri = os.getenv("NEO4J_URI", "bolt://localhost:7687")
+    user = os.getenv("NEO4J_USER", "neo4j")
+    logger.info("Connecting to Neo4j at %s", uri)
+    with  GraphDatabase.driver(
+        uri,
+        auth=(user, os.getenv("NEO4J_PASSWORD", "graphrag")),
+    ) as driver:
+        driver.verify_connectivity
+    return driver
+
+
 
 

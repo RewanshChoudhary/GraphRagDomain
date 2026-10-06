@@ -1,6 +1,6 @@
 import logging
 import os
-from typing import Optional, Type, Any
+from typing import Any, Optional, Type
 
 import dotenv
 from langchain.agents import create_agent
@@ -15,6 +15,7 @@ provider = os.getenv("LLM_PROVIDER", "gemini").lower()
 model = os.getenv("LLM_MODEL")
 api_key = os.getenv("LLM_API_KEY")
 base_url = os.getenv("LLM_BASE_URL")
+  
 temperature = float(os.getenv("LLM_TEMPERATURE", "0.0"))
 
 logger.info("Initializing LLM model: %s (provider: %s)", model, provider)
