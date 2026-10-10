@@ -1,29 +1,34 @@
 # graphrag-entertainment
 
-An experimental GraphRAG application for entertainment reviews. The current
-implementation provides PostgreSQL-backed document and chunk ingestion, text
-embedding, an ordinary RAG experiment, and model schemas for a broader graph
-pipeline.
+Python project for ingesting entertainment reviews and experimenting with
+ordinary RAG and knowledge graph extraction.
 
 ## Setup
 
-1. Copy `.env.example` to `.env` and fill in the LLM settings you plan to use.
-2. Start PostgreSQL and pgAdmin with `docker compose up -d`.
-3. Install dependencies with `uv sync`.
-4. Apply `db/schema.sql` to the configured PostgreSQL database, then run the
-   ingestion entry point in `src/graphrag_entertainment/ingestion/` as needed.
+From this directory, copy `.env.example` to `.env`, configure the services you
+use, start PostgreSQL with `docker compose up -d`, and install dependencies
+with `uv sync`. Apply `db/schema.sql` to PostgreSQL before ingesting data.
 
-The CLI entry point is `graphrag-entertainment`. Run the HTTP application with
-`uv run graphrag-entertainment`.
+## Where things live
 
-## Repository layout
+| Location | Purpose |
+| --- | --- |
+| `src/graphrag_entertainment/ingestion/` | Read reviews, chunk text, create embeddings, and store documents/chunks in PostgreSQL. |
+| `src/graphrag_entertainment/graph/` | Graph extraction and graph database pipelines. |
+| `src/graphrag_entertainment/models/` | Shared database and LLM response schemas. |
+| `src/graphrag_entertainment/main.py` | FastAPI application entry point. |
+| `experiments/ordinary_rag/` | Ordinary RAG experiment scripts. |
+| `tests/integration/api_requests.http` | HTTP requests for manual API exploration. |
+| `data/` | Raw input and processed datasets. |
+| `db/` | PostgreSQL schema and migrations. |
 
-- `data/raw/` and `data/processed/` hold source and derived datasets.
-- `db/` contains the PostgreSQL schema and future migrations.
-- `src/graphrag_entertainment/` contains the Python package.
-- `experiments/` contains exploratory retrieval implementations.
-- `notebooks/` contains exploration notebooks.
-- `tests/` is organized by unit and integration test area.
+There are two graph pipelines under `graph/`: `extraction.py` batches and
+validates model output from PostgreSQL chunks; `neo4j_pipeline.py` extracts
+individual chunks and writes results to Neo4j. The first currently stops
+before database persistence.
 
-The raw `movies_with_reviews.csv` dataset was not included in this checkout.
-The cleaned dataset is kept under `data/processed/`.
+`ingestion/models.py` contains dataclasses shaped for PostgreSQL row handling;
+`models/` contains the Pydantic schemas used for graph extraction and LLM data.
+
+The cleaned review dataset is `data/processed/movies_with_reviews_cleaned.csv`.
+The original raw CSV was not present in this checkout.

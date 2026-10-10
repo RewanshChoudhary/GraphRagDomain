@@ -1,8 +1,6 @@
 from dataclasses import dataclass
 from typing import Any
 
-from pydantic import BaseModel, Field
-
 
 @dataclass
 class Document:
@@ -18,6 +16,4 @@ class Chunk:
     start_sentence:int | None = None
     end_sentence:int | None = None
     vector: list[float] | None = None
-
-
-
+    id: int | None = None

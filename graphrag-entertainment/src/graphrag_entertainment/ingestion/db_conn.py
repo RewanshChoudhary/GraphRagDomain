@@ -28,13 +28,16 @@ def get_neo4j_driver() -> Driver:
     uri = os.getenv("NEO4J_URI", "bolt://localhost:7687")
     user = os.getenv("NEO4J_USER", "neo4j")
     logger.info("Connecting to Neo4j at %s", uri)
-    with  GraphDatabase.driver(
+    driver = GraphDatabase.driver(
         uri,
         auth=(user, os.getenv("NEO4J_PASSWORD", "graphrag")),
-    ) as driver:
-        driver.verify_connectivity
+    )
+    try:
+        driver.verify_connectivity()
+    except Exception:
+        driver.close()
+        raise
     return driver
-
 
 
 

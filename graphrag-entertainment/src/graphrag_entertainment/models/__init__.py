@@ -1,5 +1,12 @@
 """Pydantic schemas used by the GraphRAG pipeline."""
 
+from .extraction import (
+    ExtractedClaim,
+    ExtractedEntity,
+    ExtractedRelationship,
+    GraphExtraction,
+    RelationshipType,
+)
 from .schema import (
     Chunk,
     Claim,
@@ -23,7 +30,12 @@ __all__ = [
     "Entity",
     "EntityMention",
     "EntityType",
+    "ExtractedClaim",
+    "ExtractedEntity",
+    "ExtractedRelationship",
+    "GraphExtraction",
     "Query",
     "QueryCommunityAnswer",
     "Relationship",
+    "RelationshipType",
 ]

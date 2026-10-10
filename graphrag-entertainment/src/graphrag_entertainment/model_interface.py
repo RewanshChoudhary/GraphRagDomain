@@ -37,6 +37,13 @@ else:
     )
 
 
+def get_llm(structured_response: Optional[Type[BaseModel]] = None):
+    if structured_response is None:
+        return llm
+
+    return llm.with_structured_output(structured_response)
+
+
 def get_agent(structured_response: Optional[Type[BaseModel]],system_prompt:str,context_schema:Optional[Any]=None):
 
     agent = create_agent(

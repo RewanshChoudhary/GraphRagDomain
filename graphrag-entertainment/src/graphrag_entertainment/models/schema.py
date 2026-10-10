@@ -34,7 +34,9 @@ def utc_now() -> datetime:
 
 class EntityType(StrEnum):
     FILM = "FILM"
+    MOVIE = "MOVIE"
     ACTOR = "ACTOR"
+    PERSON = "PERSON"
     DIRECTOR = "DIRECTOR"
     WRITER = "WRITER"
     CHARACTER = "CHARACTER"
@@ -42,6 +44,8 @@ class EntityType(StrEnum):
     STUDIO = "STUDIO"
     CRITIC = "CRITIC"
     PUBLICATION = "PUBLICATION"
+    CONCEPT = "CONCEPT"
+    LOCATION = "LOCATION"
 
 
 class Document(BaseModel):

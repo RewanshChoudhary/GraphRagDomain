@@ -5,7 +5,7 @@ from typing import TypedDict
 from psycopg.rows import dict_row
 
 from graphrag_entertainment.ingestion.db_conn import get_postgres_connection
-from graphrag_entertainment.ingestion.models import GraphExtraction
+from graphrag_entertainment.models.extraction import GraphExtraction
 from graphrag_entertainment.model_interface import get_agent
 
 MAX_CHUNKS_PER_BATCH = 15
